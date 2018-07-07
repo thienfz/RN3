@@ -3,13 +3,15 @@ import {
   Text,
   View,
   Image,
-  StyleSheet
+  StyleSheet,
+  ImageBackground,
 } from 'react-native'
 
 class App extends Component {
   state = {}
   render() {
     return (
+      <ImageBackground source = {{uri:'https://i.imgur.com/MB19EGt.jpg'}} style = {stylish.background}>
       <View style={stylish.component}>
 
         <Text style={stylish.headline}> Schedule </Text>
@@ -64,19 +66,17 @@ class App extends Component {
 
         </View>
       </View>
+      </ImageBackground>
     );
   }
 }
 
 const stylish = StyleSheet.create({
-  get submit() {
-    return this._submit;
-  },
-  set submit(value) {
-    this._submit = value;
+  background: {
+    flex: 1,
   },
   component: {
-    backgroundColor: 'rgb(41,47,54)',
+    backgroundColor:'rgba(0,0,0,0)',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',

@@ -1,0 +1,52 @@
+{
+    "courseData":[
+        {
+            "key": 1,
+            "name": "Code Intensive",
+            "icon": "https://techkids.vn/photos/java_1498988796971.png",
+            "link": "https://techkids.vn/khoa-hoc-lap-trinh/code-intensive",
+            "cost": "2.500.000$",
+            "time": "2 months"
+        },
+        {
+            "key": 2,
+            "name": "Code for Everyone",
+            "icon": "https://techkids.vn/photos/Untitled_1485067714935.png",
+            "link": "https://techkids.vn/khoa-hoc-lap-trinh/code-for-everyone",
+            "cost": "3.500.000$",
+            "time":"2.5 months"
+        },
+        {
+            "key": 3,
+            "name": "React Native",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+            "link": "https://techkids.vn/khoa-hoc-lap-trinh/react-native",
+            "cost": "6.200.000$",
+            "time":"3.5 months"
+        },
+        {
+            "key": 4,
+            "name": "Android Developer",
+            "icon": "https://techkids.vn/photos/android_1485067626856.png",
+            "link": "https://techkids.vn/khoa-hoc-lap-trinh/android",
+            "cost": "6.200.000$",
+            "time":"3 months"
+        },
+        {
+            "key": 5,
+            "name": "Web Fullstack",
+            "icon": "https://techkids.vn/photos/Full-Stack-logo_1485067440650.jpg",
+            "link": "https://techkids.vn/khoa-hoc-lap-trinh/web-fullstack",
+            "cost": "6.200.000$",
+            "time":"3.5 months"
+        },
+        {
+            "key": 6,
+            "name": "Code for Kids",
+            "icon": "https://techkids.vn/photos/18015565_1435650243122118_1903639495_o_1492574546403.jpg",
+            "link": "http://techkids.edu.vn/",
+            "cost": "5.200.000$",
+            "time":"2.5 months"
+        }
+    ]
+}

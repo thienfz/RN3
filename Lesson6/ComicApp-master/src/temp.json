@@ -1,0 +1,249 @@
+{
+    "success": 1,
+    "message": "Success!",
+    "categories": [
+        {
+            "videos": [],
+            "comics": [],
+            "_id": "5b3eba5799673d30719dcc5a",
+            "name": "Thiên nhiên"
+        },
+        {
+            "videos": [],
+            "comics": [
+                {
+                    "photos": [
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_1.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_2.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_3.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_4.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_5.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_6.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_7.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_8.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_10.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_11.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_13.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_14.jpg",
+                        "/media/comic/lokcomic1giaingochungkhoanp1/Copy_of_15.jpg"
+                    ],
+                    "_id": "5b3eb9e999673d30719dcae7",
+                    "title": "LOK Comic #1: Giải ngố chứng khoán (P.1)",
+                    "upload_date": "2018-06-19T08:09:51.049Z"
+                },
+                {
+                    "photos": [
+                        "/media/comic/lokcomic2giaingochungkhoanp2/13_ZPdjsAJ.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/14_cHnL0yV.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/15_HnMkuok.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/16_NIR4TmY.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/17_gYullKz.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/18_OebvFlJ.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/19_xTdOmvx.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/20_i4Xfbqg.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/21_Hqr2kNx.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/22_U7FWd8h.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/23_pz4fEQQ.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/24_OoIdmLz.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/25_0IU0zwO.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/26_IRcUVLk.jpg",
+                        "/media/comic/lokcomic2giaingochungkhoanp2/27_HtUIoMq.jpg"
+                    ],
+                    "_id": "5b3eba0399673d30719dcb43",
+                    "title": "LOK Comic #2: Giải ngố chứng khoán (P.2)",
+                    "upload_date": "2018-06-19T08:12:23.976Z"
+                }
+            ],
+            "_id": "5b3eba6d99673d30719dcc9e",
+            "name": "Kinh tế - Chính trị"
+        },
+        {
+            "videos": [],
+            "comics": [
+                {
+                    "photos": [
+                        "/media/comic/lokcomic3-vanhoahenho/1a.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/1c.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/1d.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/1e.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/1f.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/2a.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/2b.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/2d.jpg",
+                        "/media/comic/lokcomic3-vanhoahenho/2f.jpg"
+                    ],
+                    "_id": "5b3eb9e199673d30719dcacd",
+                    "title": "LOK Comic #3: Văn hóa hẹn hò",
+                    "upload_date": "2018-06-19T08:09:04.809Z"
+                },
+                {
+                    "photos": [
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_01.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_02.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_03.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_04.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_05.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_06.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_07.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_08.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_09.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_10.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_11.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_12.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_13.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_14.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_15.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_16.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_17.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_18.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_19.jpg",
+                        "/media/comic/lokcomic6-lichsuxamminhcuanguoiviet/Tha_thu-_20.jpg"
+                    ],
+                    "_id": "5b3eba2199673d30719dcba5",
+                    "title": "LOK Comic #6 - Lịch sử xăm mình của người Việt",
+                    "upload_date": "2018-06-19T08:15:02.434Z"
+                },
+                {
+                    "photos": [
+                        "/media/comic/lokcomic98loaitrithongminh/01.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/02.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/1.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/2.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/3.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/4.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/5.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/6.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/7.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/8.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/9.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/10.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/11.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/Ket.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/KET2.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/KET3.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/KET4.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/KET5.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/MO.jpg",
+                        "/media/comic/lokcomic98loaitrithongminh/MO2.jpg"
+                    ],
+                    "_id": "5b3eba3499673d30719dcbe1",
+                    "title": "LOK Comic #9: 8 loại trí thông minh",
+                    "upload_date": "2018-06-19T08:15:35.234Z"
+                }
+            ],
+            "_id": "5b3ec15d99673d30719dfb2d",
+            "name": "Con người - Tâm lý học - Hành vi"
+        },
+        {
+            "videos": [],
+            "comics": [
+                {
+                    "photos": [
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_1.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_2.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_3.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_4.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_5.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_6.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_7.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_8.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_9.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_10.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_11.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_12.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_13.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_14.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_15.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_16.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_17.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_18.png"
+                    ],
+                    "_id": "5b3eba1899673d30719dcb85",
+                    "title": "LOK Comic #5 - Đạo Hồi - Đạo Thiên Chúa - Đạo Do Thái",
+                    "upload_date": "2018-06-19T08:14:44.635Z"
+                }
+            ],
+            "_id": "5b3ec22299673d30719dfd9f",
+            "name": "Văn hoá - Lịch sử - Xã hội"
+        },
+        {
+            "videos": [],
+            "comics": [
+                {
+                    "photos": [
+                        "/media/comic/abcd/101.png",
+                        "/media/comic/abcd/102.png",
+                        "/media/comic/abcd/103.png",
+                        "/media/comic/abcd/104.png",
+                        "/media/comic/abcd/105.png",
+                        "/media/comic/abcd/106.png",
+                        "/media/comic/abcd/107.png",
+                        "/media/comic/abcd/108.png",
+                        "/media/comic/abcd/109.png",
+                        "/media/comic/abcd/110.png",
+                        "/media/comic/abcd/KS11.png",
+                        "/media/comic/abcd/KS12.png",
+                        "/media/comic/abcd/KS13.png",
+                        "/media/comic/abcd/ks14.png",
+                        "/media/comic/abcd/ks15.png",
+                        "/media/comic/abcd/ks16.png",
+                        "/media/comic/abcd/KS17.png"
+                    ],
+                    "_id": "5b3eb9f699673d30719dcb18",
+                    "title": "LOK Comic #8: Kháng Sinh",
+                    "upload_date": "2018-06-19T08:12:16.714Z"
+                },
+                {
+                    "photos": [
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_1.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_2.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_3.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_4.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_5.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_6.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_7.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_8.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_9.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_10.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_11.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_12.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_13.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_14.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_15.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_16.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_17.png",
+                        "/media/comic/lokcomic5-daohoi-daothienchua-daodothai/abraham_18.png"
+                    ],
+                    "_id": "5b3eba1899673d30719dcb85",
+                    "title": "LOK Comic #5 - Đạo Hồi - Đạo Thiên Chúa - Đạo Do Thái",
+                    "upload_date": "2018-06-19T08:14:44.635Z"
+                },
+                {
+                    "photos": [
+                        "/media/comic/lokcomic7-chatbeop1/02.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/03.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/04.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/05.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/06.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/07.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/08.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/09.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/10.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/11.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/12.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/13.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/14.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/15.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/16.jpg",
+                        "/media/comic/lokcomic7-chatbeop1/17.jpg"
+                    ],
+                    "_id": "5b3eba2b99673d30719dcbc7",
+                    "title": "LOK Comic #7 - Chất béo (P.1)",
+                    "upload_date": "2018-06-19T08:15:26.989Z"
+                }
+            ],
+            "_id": "5b3ec2e199673d30719e041f",
+            "name": "Sức khoẻ"
+        }
+    ]
+}

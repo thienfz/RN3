@@ -10,7 +10,7 @@ import {
 class ComicListItem extends Component {
   state = {}
   render() {
-    console.log('hihihih')
+    this.props.navigation.navigationOptions
     return (
       <TouchableOpacity style={styles.container}
         onPress={() => this.props.navigation.navigate('ComicDetail',
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   container: {
     height: 250,
     width: Dimensions.get('window').width / 2,
-    padding: 5
+    padding: 5,
   },
   image: {
     height: 200

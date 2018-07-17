@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 import {
-  Text,
   FlatList,
   Image
 } from 'react-native';
 
+import ScaledImage from './ScaledImage'
 class ComicDetail extends Component {
- 
-  state = {  }
- 
+
+  state = {}
+  static navigationOptions = ({ navigation }) =>
+    ({
+      title: navigation.state.params.comic.title
+    })
   render() {
     return (
       <FlatList
-        data = {this.props.navigation.state.params.comic.photos}
-        renderItem = { ({item}) =>
-          <Image 
-          source ={{uri: item}} 
-          style={{height:300}}/>}
+        data={this.props.navigation.state.params.comic.photos}
+        renderItem={({ item }) =>
+          <ScaledImage link={item} />}
 
-        keyExtractor = {(item)=>item}
+        keyExtractor={(item) => item}
       />
     );
   }

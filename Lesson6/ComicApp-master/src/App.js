@@ -9,7 +9,7 @@ import { createStackNavigator } from 'react-navigation';
 import ComicListScreen from './ComicListScreen';
 import ComicDetail from './ComicDetail';
 
-const Navigation = createStackNavigator({
+const Navigation  = createStackNavigator({
   ComicList: {
     screen: ComicListScreen,
     navigationOptions: ({navigation}) => (
@@ -17,7 +17,7 @@ const Navigation = createStackNavigator({
     )
   },
   ComicDetail: {
-    screen: ComicDetail
+    screen: ComicDetail,
   }
 })
 

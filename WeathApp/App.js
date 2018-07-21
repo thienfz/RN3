@@ -58,7 +58,7 @@ class QkWeatherApp extends Component {
     <View style={{ height: 75, width: 300 }}>
       <View style={{ height: 70, flexDirection: 'row', justifyContent: 'flex-start', backgroundColor: 'rgb(45,43,61)', borderRadius: 5, alignItems: 'center' }}>
         <Text style={{ fontSize: 15, color: 'white', width: 200 }}> {moment().add(index, 'd').format('DD/MM/YYYY')}</Text>
-        <Text style={{ fontSize: 15, color: 'white', width: 30 }}>{this.state.CF === false ? parseInt(this.state.data.list[0].temp.day) : parseInt(this.state.data.list[0].temp.day - 273)}  </Text>
+        <Text style={{ fontSize: 15, color: 'white', width: 30 }}>{this.state.CF === false ?  parseInt((this.state.data.list[0].temp.day-273.15)*1.8+32) : parseInt(this.state.data.list[0].temp.day - 273)}  </Text>
         <Image source={this._requireImage(item.weather[0].main)} style={{ height: 50, width: 50 }} />
       </View>
       <View style={{ height: 5 }} />
@@ -93,7 +93,7 @@ class QkWeatherApp extends Component {
             <Text style={st.status}> {this.state.data.list[0].weather[0].description} </Text>
           </View>
           <View style={st.itemincurrent}>
-            <Text style={st.temperate}> {this.state.CF === false ? parseInt(this.state.data.list[0].temp.day) : parseInt(this.state.data.list[0].temp.day - 273)} </Text>
+            <Text style={st.temperate}> {this.state.CF === false ? parseInt((this.state.data.list[0].temp.day-273.15)*1.8+32) : parseInt(this.state.data.list[0].temp.day - 273)} </Text>
             <View style={st.buttonCF}>
               <TouchableOpacity
                 onPress={() => this.changToF()}>

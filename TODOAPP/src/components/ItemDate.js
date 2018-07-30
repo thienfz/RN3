@@ -26,7 +26,7 @@ const st = StyleSheet.create({
         alignItems:'flex-end',
     },
     dayOfWeek:{
-        width: 100,
+        width: 120,
         fontSize: 20,
         fontWeight:'bold',
     },

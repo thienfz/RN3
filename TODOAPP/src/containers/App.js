@@ -9,7 +9,7 @@ import AddTaskScreen from './AddTaskScreen';
 import ScheduleScreen from './ScheduleScreen'
 
 import { createStackNavigator } from 'react-navigation'
-import { gray, white,calendarHighlight } from '../styles'
+import { gray, white, calendarHighlight } from '../styles'
 
 const Navigation = createStackNavigator({
   Schedule: {
@@ -39,12 +39,12 @@ const Navigation = createStackNavigator({
       title: 'Add New Task',
       headerRight:
         <TouchableOpacity
-        onPress = {()=>navigation.navigate('Schedule')}>
-          <Text style={{fontWeight:'bold',fontSize:18,marginEnd:10,color: calendarHighlight}}> Done </Text>
+          onPress={() => navigation.navigate('Schedule')}>
+          <Text style={{ fontWeight: 'bold', fontSize: 18, marginEnd: 10, color: calendarHighlight }}> Done </Text>
         </TouchableOpacity>,
       headerLeft:
         <TouchableOpacity
-        onPress = {()=>navigation.navigate('Schedule')}>
+          onPress={() => navigation.navigate('Schedule')}>
           <Image
             style={{ height: 20, width: 20, marginStart: 5, }}
             source={{ uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVGhD7dMxagJBFMbxVbHyBhZpLTyFEMhF0tva7QkCaSwk2CQ2WUd2tDPu8wS5QBrrXECw0cksvkJlTev35PvBwLLzivmzswlRtTRN6/poUwihNsvlxeWyc15+Pr10dMuOY0QxnnkJJ+tDt224EhHiV3nTEXzl/1AVEa/Yxvuvto5h+y8iW6wedAwbI1AwAgUjUDACBSNQMAIFI1DcRUQpHvjVfMT7ctmKB9+fRrhcfk1FlLIsa5QHPw8pDvGqPeuIHc4XvRizvZOY1SNjEDEGFWNQMQYVY1AxBhVjUDEG1bUYl6+fdMSO6hiZ6LYtlzHOy0C37JnOpet8MYyrPxp9N/U10e0lyR+GznmkkPcJ3wAAAABJRU5ErkJggg==' }} />

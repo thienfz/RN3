@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "date": "Friday 22 June 2018",
+      "date": "Friday June 22 2018",
       "data": [
         {
           "id": 1234,
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "date": "Saturday 23 June 2018",
+      "date": "Saturday June 23 2018",
       "data": [
         {
           "id": 1334,
@@ -38,7 +38,7 @@
     },
     {
       "id": 3,
-      "date": "Sunday 24 June 2018",
+      "date": "Sunday June 24 2018",
       "data": [
         {
           "id": 1244,

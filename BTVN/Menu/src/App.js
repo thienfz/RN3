@@ -11,7 +11,7 @@ import {
 import { menu } from './sectionlist-db.json'
 class Menu extends Component {
   state = {
-
+    
   }
   _renderItem = ({ item }) =>
     <View style={ss.item} >

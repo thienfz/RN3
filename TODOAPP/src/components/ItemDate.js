@@ -8,29 +8,29 @@ import { gray, white } from '../styles';
 class ItemDate extends Component {
     state = {}
     render() {
-        const dayOfWeek = this.props.date.substring(0,this.props.date.indexOf(" "));
-        const date = this.props.date.substring(this.props.date.indexOf(" ")+1)
+        const dayOfWeek = this.props.date.substring(0, this.props.date.indexOf(" "));
+        const date = this.props.date.substring(this.props.date.indexOf(" ") + 1)
         return (
-            <View style = {st.container}>
-                <Text style = {st.dayOfWeek}>{dayOfWeek}</Text>
-                <Text style = {st.date}>{date}</Text>
+            <View style={st.container}>
+                <Text style={st.dayOfWeek}>{dayOfWeek}</Text>
+                <Text style={st.date}>{date}</Text>
             </View>
         );
     }
 }
 
 const st = StyleSheet.create({
-    container:{
+    container: {
         flexDirection: 'row',
-        margin:15,
-        alignItems:'flex-end',
+        margin: 15,
+        alignItems: 'flex-end',
     },
-    dayOfWeek:{
+    dayOfWeek: {
         width: 120,
         fontSize: 20,
-        fontWeight:'bold',
+        fontWeight: 'bold',
     },
-    date:{
+    date: {
         fontSize: 12,
         color: gray
     }

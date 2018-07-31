@@ -4,13 +4,16 @@ import {
     View,
     TextInput,
     StyleSheet,
-    FlatList,
     TouchableOpacity
 } from 'react-native';
+import {getDayOfWeek} from '../util'
 import CalendarStrip from 'react-native-calendar-strip'
 import { white, calendarBackground, calendarHighlight, gray, categoryTodo } from '../styles'
 import ChooseCategory from '../components/ChooseCategory';
 import DateTimePicker from 'react-native-modal-datetime-picker'
+import { addTask } from '../actions';
+import { connect } from "react-redux";
+
 class AddTaskScreen extends Component {
     state = {
         selected: new Date(),
@@ -19,24 +22,29 @@ class AddTaskScreen extends Component {
         currentTask: 'Todo',
         pickedTime: new Date().getHours().toString() + ":" + new Date().getMinutes().toString()
     }
+    componentDidMount(){
+        this.props.navigation.setParams({addTask: this.handleAddTask})
+    }
+    handleAddTask(){
+        this.props.addTask({
+            id: 123,
+            date: 'June 23 2018',
+            task: {
+                id: 1234,
+                category: "Personal",
+                content: "Go to New York",
+                time: "09:00"
+            }
+        })
+        this.props.navigation.navigate('Schedule')
+    }
+    
     clicked = (color, category) =>
         this.setState({
             color: color,
             currentTask: category,
         })
 
-    getDayOfWeek(day) {
-        switch (day) {
-            case 1: return "Monday"
-            case 2: return "Tuesday"
-            case 3: return "Wednesday"
-            case 4: return "Thursday"
-            case 5: return "Friday"
-            case 6: return "Saturday"
-            case 7: return "Sunday"
-            default: return "undefined"
-        }
-    }
     confirm = time => this.setState({
         pickedTime: time.getHours().toString() + ":" + time.getMinutes().toString(),
         isTimerVisible: false,
@@ -54,7 +62,7 @@ class AddTaskScreen extends Component {
                     highlightDateNameStyle={{ color: calendarHighlight }}
                     style={st.calendar} />
                 <View style={st.dateviewer}>
-                    <Text style={st.dayOfWeek}>{this.getDayOfWeek(this.state.selected.getDay())}</Text>
+                    <Text style={st.dayOfWeek}>{getDayOfWeek(this.state.selected.getDay())}</Text>
                     <Text style={st.date}>{this.state.selected.toDateString().substring(3, )}</Text>
                 </View>
                 <Text style={st.title}> Content </Text>
@@ -115,4 +123,4 @@ const st = StyleSheet.create({
     }
 })
 
-export default AddTaskScreen;
+export default connect(null,{addTask})(AddTaskScreen);

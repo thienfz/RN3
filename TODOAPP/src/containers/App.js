@@ -7,9 +7,14 @@ import {
 } from 'react-native';
 import AddTaskScreen from './AddTaskScreen';
 import ScheduleScreen from './ScheduleScreen'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
 import { createStackNavigator } from 'react-navigation'
 import { gray, white, calendarHighlight } from '../styles'
+import rootReducer from '../reducers'
+
+const store = createStore(rootReducer)
 
 const Navigation = createStackNavigator({
   Schedule: {
@@ -39,7 +44,7 @@ const Navigation = createStackNavigator({
       title: 'Add New Task',
       headerRight:
         <TouchableOpacity
-          onPress={() => navigation.navigate('Schedule')}>
+          onPress={navigation.getParam('addTask')}>
           <Text style={{ fontWeight: 'bold', fontSize: 18, marginEnd: 10, color: calendarHighlight }}> Done </Text>
         </TouchableOpacity>,
       headerLeft:
@@ -68,7 +73,10 @@ class App extends Component {
   render() {
     console.log('hihi')
     return (
-      <Navigation />
+      <Provider
+        store={store}>
+        <Navigation />
+      </Provider>
     );
   }
 }

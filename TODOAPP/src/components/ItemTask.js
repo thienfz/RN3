@@ -6,15 +6,32 @@ import {
     TouchableOpacity
 } from 'react-native';
 import RoundCheckbox from 'rn-round-checkbox'
-import { categoryBirthday, white, gray, categoryPersonal, categoryEvent, categoryTodo, categoryShopping } from '../styles';
+import { categoryBirthday, white, gray, categoryPersonal, categoryEvent, categoryTodo, categoryShopping, calendarHighlight } from '../styles';
+import { chooseColorByCategory } from '../util';
 class ItemTask extends Component {
-    state = {}
+    state = {
+        taskDone: false,
+
+    }
+
+    toogleTask = newValue => this.setState({ taskDone: newValue })
+
     render() {
         return (
             <View style={st.container}>
-                <RoundCheckbox />
+                <RoundCheckbox
+                    checked={this.state.taskDone}
+                    onValueChange={this.toogleTask}
+                    backgroundColor={calendarHighlight} />
                 <Text style={st.time}>{this.props.task.time}</Text>
-                <TouchableOpacity style={st.details}>
+                <TouchableOpacity style={{
+                    flexDirection: 'column',
+                    flex: 1,
+                    borderRadius: 10,
+                    backgroundColor: chooseColorByCategory(this.props.task.category),
+                    padding: 15,
+                    marginStart: 20
+                }}>
                     <Text style={st.taskname}> {this.props.task.category} </Text>
                     <Text style={st.taskdetails}> {this.props.task.content} </Text>
                 </TouchableOpacity>
@@ -33,14 +50,6 @@ const st = StyleSheet.create({
         marginStart: 20,
         width: 40,
         color: gray
-    },
-    details: {
-        flexDirection: 'column',
-        flex: 1,
-        borderRadius: 10,
-        backgroundColor: 'rgb(219, 49, 190)',
-        padding: 15,
-        marginStart: 20
     },
     taskname: {
         color: white,

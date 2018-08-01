@@ -6,13 +6,13 @@ import {
     StyleSheet,
     TouchableOpacity
 } from 'react-native';
-import {getDayOfWeek} from '../util'
+import { getDayOfWeek } from '../util'
 import CalendarStrip from 'react-native-calendar-strip'
 import { white, calendarBackground, calendarHighlight, gray, categoryTodo } from '../styles'
 import ChooseCategory from '../components/ChooseCategory';
 import DateTimePicker from 'react-native-modal-datetime-picker'
 import { addTask } from '../actions';
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 
 class AddTaskScreen extends Component {
     state = {
@@ -20,12 +20,13 @@ class AddTaskScreen extends Component {
         isTimerVisible: false,
         color: categoryTodo,
         currentTask: 'Todo',
-        pickedTime: new Date().getHours().toString() + ":" + new Date().getMinutes().toString()
+        pickedTime: new Date().getHours().toString() + ":" + new Date().getMinutes().toString(),
+        
     }
-    componentDidMount(){
-        this.props.navigation.setParams({addTask: this.handleAddTask})
+    componentDidMount() {
+        this.props.navigation.setParams({ addTask: this.handleAddTask })
     }
-    handleAddTask(){
+    handleAddTask = () => {
         this.props.addTask({
             id: 123,
             date: 'June 23 2018',
@@ -33,12 +34,13 @@ class AddTaskScreen extends Component {
                 id: 1234,
                 category: "Personal",
                 content: "Go to New York",
-                time: "09:00"
+                time: "09:00",
+                completed: false
             }
         })
         this.props.navigation.navigate('Schedule')
     }
-    
+
     clicked = (color, category) =>
         this.setState({
             color: color,
@@ -123,4 +125,4 @@ const st = StyleSheet.create({
     }
 })
 
-export default connect(null,{addTask})(AddTaskScreen);
+export default connect(null, { addTask })(AddTaskScreen);

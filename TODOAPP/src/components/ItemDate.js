@@ -4,7 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
-import { gray, white } from '../styles';
+import { gray } from '../styles';
 class ItemDate extends Component {
     state = {}
     render() {

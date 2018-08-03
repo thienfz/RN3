@@ -3,35 +3,61 @@ import {
     View,
     Text,
     StyleSheet,
-    TouchableOpacity
+    TouchableOpacity,
+    Alert
 } from 'react-native';
 import RoundCheckbox from 'rn-round-checkbox'
 import { categoryBirthday, white, gray, categoryPersonal, categoryEvent, categoryTodo, categoryShopping, calendarHighlight } from '../styles';
 import { chooseColorByCategory } from '../util';
+import { toggleTask, deleteTask } from '../actions';
+import { connect } from 'react-redux'
 class ItemTask extends Component {
     state = {
-        taskDone: false,
-
     }
 
-    toogleTask = newValue => this.setState({ taskDone: newValue })
-
+    toogleTask = newValue => {
+        console.log(this.props.task)
+        this.props.toggleTask({
+            dayID: this.props.dayID,
+            timeID: this.props.task.id
+        })
+    }
     render() {
+        console.log(this.state.taskDone)
         return (
+
             <View style={st.container}>
                 <RoundCheckbox
-                    checked={this.state.taskDone}
+                    checked={this.props.task.completed}
                     onValueChange={this.toogleTask}
                     backgroundColor={calendarHighlight} />
                 <Text style={st.time}>{this.props.task.time}</Text>
-                <TouchableOpacity style={{
-                    flexDirection: 'column',
-                    flex: 1,
-                    borderRadius: 10,
-                    backgroundColor: chooseColorByCategory(this.props.task.category),
-                    padding: 15,
-                    marginStart: 20
-                }}>
+                <TouchableOpacity
+                    onLongPress={() => {
+                        console.log("long press")
+                        Alert.alert(
+                            'Delete',
+                            'Are you fucking sure?',
+                            [
+                                {
+                                    text: 'OK', onPress: () => this.props.deleteTask({
+                                        dayID: this.props.dayID,
+                                        timeID: this.props.task.id
+                                    })
+                                },
+                                { text: 'Cancel', style: 'cancel' },
+                            ]
+                        )
+                    }}
+                    style={{
+                        flexDirection: 'column',
+                        flex: 1,
+                        borderRadius: 10,
+                        backgroundColor: chooseColorByCategory(this.props.task.category),
+                        padding: 15,
+                        marginStart: 20,
+
+                    }}>
                     <Text style={st.taskname}> {this.props.task.category} </Text>
                     <Text style={st.taskdetails}> {this.props.task.content} </Text>
                 </TouchableOpacity>
@@ -63,5 +89,4 @@ const st = StyleSheet.create({
         marginTop: 5,
     }
 })
-
-export default ItemTask;
+export default connect(null, { toggleTask, deleteTask })(ItemTask);

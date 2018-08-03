@@ -6,7 +6,7 @@ import {
     StyleSheet,
     TouchableOpacity
 } from 'react-native';
-import { getDayOfWeek } from '../util'
+import { getDayOfWeek, getDateStringFromDate } from '../util'
 import CalendarStrip from 'react-native-calendar-strip'
 import { white, calendarBackground, calendarHighlight, gray, categoryTodo } from '../styles'
 import ChooseCategory from '../components/ChooseCategory';
@@ -21,20 +21,22 @@ class AddTaskScreen extends Component {
         color: categoryTodo,
         currentTask: 'Todo',
         pickedTime: new Date().getHours().toString() + ":" + new Date().getMinutes().toString(),
-        
+        newDayID: Math.floor(new Date().getTime() / 86400),
+        newTimeID: new Date().getTime(),
+        newTime: `${new Date().getHours()}:${new Date().getMinutes()}`
     }
     componentDidMount() {
         this.props.navigation.setParams({ addTask: this.handleAddTask })
     }
     handleAddTask = () => {
         this.props.addTask({
-            id: 123,
-            date: 'June 23 2018',
+            id: this.state.newDayID,
+            date: getDateStringFromDate(this.state.selected),
             task: {
-                id: 1234,
-                category: "Personal",
-                content: "Go to New York",
-                time: "09:00",
+                id: this.state.newTimeID,
+                category: this.props.category,
+                content: this.state.content,
+                time: this.state.newTime,
                 completed: false
             }
         })
@@ -50,6 +52,8 @@ class AddTaskScreen extends Component {
     confirm = time => this.setState({
         pickedTime: time.getHours().toString() + ":" + time.getMinutes().toString(),
         isTimerVisible: false,
+        newTimeID: time.getTime(),
+        newTime: `${time.getHours()}:${time.getMinutes()}`
     })
     render() {
         return (
@@ -57,7 +61,9 @@ class AddTaskScreen extends Component {
                 <CalendarStrip
                     setSelectedDate={require('moment')}
                     onDateSelected={(date) => this.setState({
-                        selected: date._d
+                        selected: date._d,
+                        newDayID: Math.floor(date._d.getTime() / 86400),
+                        newTimeID: date._d.getTime()
                     })}
                     calendarColor={calendarBackground}
                     highlightDateNumberStyle={{ color: calendarHighlight }}
@@ -68,7 +74,8 @@ class AddTaskScreen extends Component {
                     <Text style={st.date}>{this.state.selected.toDateString().substring(3, )}</Text>
                 </View>
                 <Text style={st.title}> Content </Text>
-                <TextInput style={st.textinput}> </TextInput>
+                <TextInput style={st.textinput}
+                onChangeText = {(content)=>this.setState({content})}> </TextInput>
                 <Text style={st.title}> Time </Text>
                 <TouchableOpacity style={{ height: 20, width: 100 }}
                     onPress={() => this.setState({ isTimerVisible: true })}>
@@ -124,5 +131,5 @@ const st = StyleSheet.create({
         color: gray
     }
 })
-
-export default connect(null, { addTask })(AddTaskScreen);
+const mapStateToProps = ({category}) => ({category})
+export default connect(mapStateToProps, { addTask })(AddTaskScreen);

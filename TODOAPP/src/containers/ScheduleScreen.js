@@ -11,10 +11,11 @@ import ItemTask from '../components/ItemTask';
 import { connect } from 'react-redux'
 class ScheduleScreen extends Component {
     state = {}
-    _renderItem = ({ item }) => <ItemTask task={item} />
+    _renderItem = ({ item, section: { id } }) => <ItemTask task={item} dayID={id} />
     _renderSectionHeader = ({ section: { date } }) => <ItemDate date={date} />
     _keyExtractor = (item, index) => item + index
     render() {
+        console.log((this.props.tasks))
         return (
             <View style={st.container}>
                 <CalendarStrip
@@ -45,6 +46,6 @@ const st = StyleSheet.create({
     }
 })
 
-const mapStateToProps = ({tasks}) => ({tasks})
+const mapStateToProps = ({ tasks }) => ({ tasks })
 
 export default connect(mapStateToProps)(ScheduleScreen);

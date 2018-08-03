@@ -15,7 +15,7 @@ export const getDayOfWeek = (number) => {
     }
   }
   
-  getMonth = (number) => {
+  export const getMonth = (number) => {
     switch (number) {
       case 0: return 'January';
       case 1: return 'February';
@@ -32,7 +32,7 @@ export const getDayOfWeek = (number) => {
     }
   }
   
-  export const getDateStringFromDate = (date) => `${this.getDayOfWeek(date.getDay())} ${date.getDate()} ${this.getMonth(date.getMonth())} ${date.getFullYear()}`
+  export const getDateStringFromDate = (date) => `${getDayOfWeek(date.getDay())} ${getMonth(date.getMonth())} ${date.getDate()} ${date.getFullYear()}`
   
   export const chooseColorByCategory = (category) => {
     switch (category) {

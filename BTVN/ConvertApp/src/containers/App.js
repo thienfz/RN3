@@ -48,6 +48,7 @@ const Navigation = createStackNavigator({
 })
 
 const store = createStore(rootReducer)
+
 class ConvertApp extends Component {
   state = {}
   render() {

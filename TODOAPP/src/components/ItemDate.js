@@ -4,7 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
-import { gray } from '../styles';
+import { gray, white } from '../styles';
 class ItemDate extends Component {
     state = {}
     render() {
@@ -22,8 +22,8 @@ class ItemDate extends Component {
 const st = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        margin: 15,
         alignItems: 'flex-end',
+        backgroundColor: white
     },
     dayOfWeek: {
         width: 120,

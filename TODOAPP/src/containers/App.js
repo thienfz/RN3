@@ -8,14 +8,12 @@ import {
 import AddTaskScreen from './AddTaskScreen';
 import ScheduleScreen from './ScheduleScreen'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
 
 import { createStackNavigator } from 'react-navigation'
 import { gray, white, calendarHighlight } from '../styles'
-import rootReducer from '../reducers'
-
-const store = createStore(rootReducer)
-
+import { PersistGate } from 'redux-persist/integration/react'
+import createPersist from '../configureStore'
+const persistor = createPersist()
 const Navigation = createStackNavigator({
   Schedule: {
     screen: ScheduleScreen,
@@ -74,8 +72,10 @@ class App extends Component {
     console.log('hihi')
     return (
       <Provider
-        store={store}>
-        <Navigation />
+        store={persistor.store}>
+        <PersistGate loading={null} persistor={persistor.persistor}>
+          <Navigation />
+        </PersistGate>
       </Provider>
     );
   }

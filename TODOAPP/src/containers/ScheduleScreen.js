@@ -9,11 +9,27 @@ import { white, calendarBackground, calendarHighlight } from '../styles';
 import ItemDate from '../components/ItemDate';
 import ItemTask from '../components/ItemTask';
 import { connect } from 'react-redux'
+import { getDateStringFromDate } from '../util';
+
+const listRef = 'listRef'
+
 class ScheduleScreen extends Component {
     state = {}
     _renderItem = ({ item, section: { id } }) => <ItemTask task={item} dayID={id} />
     _renderSectionHeader = ({ section: { date } }) => <ItemDate date={date} />
     _keyExtractor = (item, index) => item + index
+    _onDateSelected = (date) => {
+        const index = this.props.tasks.map(item => item.date).indexOf(getDateStringFromDate(date._d))
+        this.scrollToSeclected(index)
+    }
+
+    scrollToSeclected = (index) => {
+        this.refs.listRef.scrollToLocation({
+            sectionIndex: index,
+            itemIndex: 0,
+            viewOffset: 20,
+        })
+    }
     render() {
         console.log((this.props.tasks))
         return (
@@ -22,12 +38,14 @@ class ScheduleScreen extends Component {
                     calendarColor={calendarBackground}
                     highlightDateNumberStyle={{ color: calendarHighlight }}
                     highlightDateNameStyle={{ color: calendarHighlight }}
-                    style={st.calendar} />
+                    style={st.calendar}
+                    onDateSelected={this._onDateSelected} />
                 <SectionList
                     renderItem={this._renderItem}
                     sections={this.props.tasks}
                     renderSectionHeader={this._renderSectionHeader}
                     keyExtractor={this._keyExtractor}
+                    ref={listRef}
                 />
 
             </View>

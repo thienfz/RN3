@@ -41,13 +41,10 @@ export default function (state = [], actions) {
             } : dayTask)
 
         case DELETE_TASK:
-            console.log('ok pressed and go into reducer')
-            console.log(actions.payload)
             const taskInDay = state.filter(item => item.id === actions.payload.dayID)
-            if (taskInDay[0].data.length === 1)
-                return state.filter(item => item.id !== actions.payload.dayID)
-            else
-                return state.map(element =>
+            return taskInDay[0].data.length === 1 ?
+                state.filter(item => item.id !== actions.payload.dayID)
+                : state.map(element =>
                     element.id !== actions.payload.dayID ? element
                         : ({
                             id: taskInDay[0].id,

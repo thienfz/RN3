@@ -17,8 +17,14 @@ class loginfirebase extends Component {
   }
   login = () => {
     firebase.auth().signInAnonymouslyAndRetrieveData()
-    .then(res=>console.log(res))
-    .catch(err=>console.log(err))
+      .then(res => {
+        Alert.alert('Login with anonymous!')
+        console.log(res)
+      })
+      .catch(err => {
+        Alert.alert(err.toString())
+        console.log(err)
+      })
   }
   render() {
     return (
